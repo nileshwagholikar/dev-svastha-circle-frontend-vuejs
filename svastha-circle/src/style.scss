@@ -1,12 +1,48 @@
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
+@import "@mdi/font/css/materialdesignicons.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 *,
 ::after,
 ::before {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 html {
-    overflow-y: auto !important;
+	overflow-y: auto !important;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+}
+
+a:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	border-bottom: 1px solid rgba(rgb(0, 0, 238), 1);
+	bottom: -5px;
+	transition: all ease-in 200ms;
+	width: 0;
+}
+
+a:hover::after,
+a:active::after {
+	width: 100%;
+}
+
+.content_column {
+	min-height: calc(100vh - 108px);
+
+	@media only screen and (min-width: 960px) {
+		min-height: calc(100vh - 8px);
+	}
 }
