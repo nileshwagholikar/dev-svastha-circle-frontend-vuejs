@@ -19,7 +19,8 @@
                 id="name"
                 v-model="name"
                 :rules="[rules.required, rules.min]"
-                hint="At least 8 characters"
+                hint="At least 8 characters, Max 150 characters"
+                maxlength="150"
                 clearable
                 counter
               ></v-text-field>
@@ -51,7 +52,8 @@
                 id="name"
                 v-model="name"
                 :rules="[rules.required, rules.min]"
-                hint="At least 8 characters"
+                hint="At least 8 characters, Max 150 characters"
+                maxlength="150"
                 clearable
                 counter
               ></v-text-field>
@@ -91,7 +93,8 @@
                 type="text"
                 id="name"
                 v-model="services_other"
-                hint="Comma separated values"
+                hint="Comma separated values. Max 150 characters."
+                maxlength="150"
                 clearable
               ></v-text-field>
             </v-col>
@@ -116,7 +119,8 @@
                 type="text"
                 id="name"
                 v-model="speciality_other"
-                hint="Comma separated values"
+                hint="Comma separated values. Max 150 characters."
+                maxlength="150"
                 clearable
               ></v-text-field>
             </v-col>
@@ -129,7 +133,7 @@
                 type="number"
                 id="name"
                 v-model="nurses"
-                hint="DD.MM.YYYY format"
+                hint="Number of Nurses"
                 clearable
               ></v-text-field>
             </v-col>
@@ -142,7 +146,7 @@
                 type="number"
                 id="name"
                 v-model="doctors"
-                hint="DD.MM.YYYY format"
+                hint="Number of Doctors"
                 clearable
               ></v-text-field>
             </v-col>

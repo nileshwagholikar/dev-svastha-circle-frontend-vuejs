@@ -57,7 +57,11 @@
     overflow-y: auto;
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: calc(100vh - 100px);
+
+    @media only screen and (min-width: 960px) {
+      height: 100%;
+    }
   }
 }
 </style>
